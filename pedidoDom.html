@@ -9,18 +9,26 @@
     <link rel="stylesheet" href="/pedidoDom.css">
 </head>
 <body>
-    
-    <h1>Faça seu pedido no Restaurante</h1>
+    <div class="h1">
+     <h1>Faça seu pedido no Restaurante</h1>
+    </div>
     <div id="mainConteiner">
         <div class="inputNumber">
             <label for="numberTable">Número da mesa:</label>
             <input type="text" placeholder="Numero mesa" id="numberTable">
+
+            <div class="conteinerButton">
+
+                <button onclick="createTable()">Criar mesa</button>
+                <button onclick="closeTable()">Fechar mesa</button>
+
+            </div>
         </div>
 
         <div>
             <div class="conteinerSelect">
 
-                <label for="chopp">Chopp:</label>
+                <label for="chopp">Chopp :</label>
                 <select  name="typeChoop" id="typeChoop">
                     <option selected disabled>Escolha uma opção</option>
                     <option value="Pilsen">Pilsen</option>
@@ -31,7 +39,7 @@
                 </select>
             
 
-                <label for="bebibas">Bebidas</label>
+                <label for="bebibas">Bebidas :</label>
                 <select  name="typeBebidas" id="typeBebidas">
                 <optgroup label="Refrigerante">
                     <option selected disabled>Escolha uma opção</option>
@@ -49,7 +57,7 @@
                 </optgroup>
                 </select>
                 
-                <label for="food">Food:</label>
+                <label for="food">Food :</label>
                 <select  name="typeFood" id="typeFood">
                     <option selected disabled>Escolha uma opção</option>
                     <option value="Pastel">Pastel</option>
@@ -61,10 +69,7 @@
     </div>
     
 
-        <div class="conteinerButton">
-            <button onclick="createTable()">Criar mesa</button>
-            <button onclick="closeTable()">Fechar mesa</button>
-        </div>    
+        
         
         
         

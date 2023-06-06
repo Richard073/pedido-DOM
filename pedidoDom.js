@@ -50,6 +50,13 @@ function createTable() {
   
     if (confirmationRemove && removeTable) {
       removeTable.remove();
+
+      Swal.fire(
+        'Mesa Removida!',
+        'Mesa fechada com sucesso',
+        'success'
+      )
+
       document.getElementById('numberTable').value = "";
   }else{
     alert("Mesa invalida!!")

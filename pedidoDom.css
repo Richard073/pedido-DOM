@@ -4,18 +4,54 @@
     box-sizing: border-box;
 }
 
+
+body{
+ background: #26303d;
+}
+#mainConteiner{
+    background-color: #fff;
+    min-width: 100vw;
+
+}
+.inputNumber,.h1, .conteinerSelect{
+    display: flex;
+    justify-content: center;
+}
+.conteinerButton{
+    margin-left: 15px;
+    gap:10px
+}
+
+h1,h2{
+    color: #e1dede
+}
+input{
+    border-radius: 5px;
+}
+button{
+    background-color: #ff6d1d;
+    color: #fff;
+    border-radius: 10px;
+   
+}
+
 #mainConteiner{
   padding: 15px;
 }
 .inputNumber{
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 .inputNumber>input{
-    margin-left: 10px;
+    margin-left: 5px;
+}
+
+.conteinerSelect{
+    margin-top: 20px;
+    gap: 15px;
 }
 
 label{
     font-size: 17px;
+    color: #26303d;
 }
+
