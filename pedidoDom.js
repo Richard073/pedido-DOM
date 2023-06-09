@@ -5,6 +5,8 @@ function createTable() {
     const typeBebidas = document.querySelector('select[name="typeBebidas"]').value;
     const typeFood = document.querySelector('select[name="typeFood"]').value;
   
+
+    
     const confirmation = confirm(`Cadastrar mesa ${numberTable}?`);
   
     if (confirmation) {
@@ -42,7 +44,7 @@ function createTable() {
 
     }
   }
-  function closeTable(){
+function closeTable(){
     const removeNumber = document.getElementById('numberTable').value;
     const removeTable = document.getElementById(`mesa-${removeNumber}`);
   
@@ -61,5 +63,16 @@ function createTable() {
   }else{
     alert("Mesa invalida!!")
   }
+}
+
+function description(){
+  const listTable= document.getElementById('listTable')
+  const description= document.getElementById('description')
+   const createTextarea= document.createElement("textarea")
+   createTextarea.id="textDescription"
+   createTextarea.rows=2
+   createTextarea.cols= 33
+   description.appendChild(createTextarea)
+   listTable.appendChild(description)
 }
   
