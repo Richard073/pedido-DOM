@@ -5,7 +5,9 @@ Mais detalhes do projeto aqui
 
 # Passos Importantes #
 - [X] Criação do repositório
+- [X] Passagem de default para master e remoção da branch main
 - [X] Criação da lógica front-end de escolha de produtos.
+- [X] Criação das pastas bin, doc, res, src, util para uso ao longo da aplicação.
 - [ ] Otimização da lógica de escolha de produtos.
 - [ ] Criação de função JavaScript para criação de base de dados local para salvar meu progresso.
 - [ ] Criação de uma tabela específica dentro da base de dados local para guardar os tipos de cerveja.
