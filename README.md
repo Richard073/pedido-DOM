@@ -11,6 +11,7 @@ Mais detalhes do projeto aqui
 
 # Passos a fazer 05/07/2023 #
 - [ ] Corrigir a comunicação do cliente com o servidor e vice-versa.
+- [ ] Explicar a lógica de envio/resposta em xml de GET e POST entre o cliente e servidor.
 - [ ] Definir quais serão as estruturas que deverão ser armazenadas em tabelas ex.: clientes, produtos, mesas
 - [ ] Criar as bases de dados simples
 - [ ] Fazer uma comunicação simples com a base de dados
