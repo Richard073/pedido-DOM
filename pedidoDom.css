@@ -22,7 +22,7 @@ body{
     gap:10px
 }
 
-h1,h2{
+h1,h2,td{
     color: #e1dede
 }
 input{
@@ -53,4 +53,23 @@ button{
 label{
     font-size: 17px;
     color: #26303d;
+}
+
+
+
+.divTable{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 98%;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+th{
+    text-align: start;
+    border-bottom: inset;
+    padding-bottom:5px ;
+    color: #fff;
 }
