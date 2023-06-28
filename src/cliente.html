@@ -1,0 +1,44 @@
+// Coloque aqui o código para o cliente (JavaScript no navegador)
+<html>
+<head>
+  <title>Aplicação de Restaurante</title>
+  <script src="cliente.js"></script>
+</head>
+<body>
+  <h1>Menu do Restaurante</h1>
+  <div id="menu-container">
+    <!-- Os itens do menu serão populados aqui -->
+  </div>
+  <button id="meu-elemento">Clique aqui</button>
+</body>
+</html>
+
+<script>
+// Exemplo básico de interação com o DOM
+document.addEventListener('DOMContentLoaded', function() {
+  // Selecionar um elemento HTML pelo ID
+  const elemento = document.getElementById('meu-elemento');
+
+  // Adicionar um manipulador de eventos de clique
+  elemento.addEventListener('click', function() {
+    // Enviar uma solicitação AJAX para o servidor
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', '/api/restaurante/menu', true);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        const resposta = JSON.parse(xhr.responseText);
+        console.log(resposta);
+	    console.log('O elemento realmente foi clicado!');
+      }
+	  else
+	  {
+	    console.log('xhr.readyState:' + xhr.readyState);
+	    console.log('xhr.status:' + xhr.status);
+	  }
+    };
+    xhr.send();
+  });
+
+  
+});
+</script>
